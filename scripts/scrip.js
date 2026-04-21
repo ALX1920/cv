@@ -2,20 +2,18 @@
    1. COPIAR CORREO AL PORTAPAPELES
 ============================================================ */
 
-const emailText = document.getElementById('email-text');
-const copyEmail = document.getElementById('copy-email');
+const copyButtons = document.querySelectorAll('.contact__value');
 
-if (emailText && copyEmail) {
-    copyEmail.addEventListener('click', () => {
-        navigator.clipboard.writeText(emailText.textContent.trim())
+copyButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        navigator.clipboard.writeText(btn.textContent.trim())
             .then(() => {
-                const original = copyEmail.textContent;
-                copyEmail.textContent = 'Copiado';
-                setTimeout(() => copyEmail.textContent = original, 1500);
+                const original = btn.textContent;
+                btn.textContent = 'Copiado';
+                setTimeout(() => btn.textContent = original, 1500);
             });
     });
-}
-
+});
 
 
 /* ============================================================
@@ -30,7 +28,6 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.section, .project-card, .blog-card, .skills-block, .education__item, .contact')
     .forEach(el => observer.observe(el));
-
 
 
 /* ============================================================
@@ -90,13 +87,13 @@ if (verMasBtn && projectsGrid) {
             `;
 
             projectsGrid.appendChild(card);
+            observer.observe(card);
         });
 
         proyectosAgregados = true;
         verMasBtn.textContent = "No hay más proyectos por ahora";
     });
 }
-
 
 
 /* ============================================================
@@ -111,12 +108,11 @@ window.addEventListener('scroll', () => {
 });
 
 
-
 /* ============================================================
    5. BOTÓN DE COMPARTIR CV (Web Share API)
 ============================================================ */
 
-const shareBtn = document.getElementById('share-cv');
+const shareBtn = document.querySelector('.contact__copy');
 
 if (shareBtn) {
     shareBtn.addEventListener('click', () => {

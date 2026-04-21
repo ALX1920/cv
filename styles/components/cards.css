@@ -1,0 +1,128 @@
+
+/* PROYECTOS */
+.project-card {
+    border-radius: var(--radius-card);
+    background: rgba(15,23,42,0.9);
+    border: 1px solid var(--border-soft);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.project-card__image-wrapper {
+    width: 100%; height: 160px; overflow: hidden;
+    background: radial-gradient(circle at top, rgba(56,189,248,0.15), transparent 60%);
+}
+.project-card__image { width: 100%; height: 100%; object-fit: cover; }
+.project-card__content { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 8px; }
+.project-card__title { font-size: 1rem; font-weight: 600; }
+.project-card__description { font-size: 0.9rem; color: var(--text-muted); }
+.project-card__tech { display: flex; flex-wrap: wrap; gap: 6px; }
+.badge {
+    font-size: 0.75rem; padding: 3px 8px;
+    border-radius: var(--radius-pill);
+    background: rgba(15,23,42,0.9);
+    border: 1px solid rgba(55,65,81,0.9);
+}
+.project-card__links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; }
+.project-card__link { color: var(--accent-blue); }
+.project-card__link:hover { text-decoration: underline; }
+
+/* RECONOCIMIENTOS */
+.recognition-card {
+    border-radius: var(--radius-card);
+    background: rgba(15,23,42,0.9);
+    border: 1px solid var(--border-soft);
+    padding: 14px 16px;
+}
+.recognition-card__title { font-size: 1rem; margin-bottom: 4px; }
+.recognition-card__description { font-size: 0.9rem; color: var(--text-muted); }
+
+/* SOBRE MÍ */
+.about {
+    border-radius: var(--radius-card);
+    background: rgba(15,23,42,0.9);
+    border: 1px solid var(--border-soft);
+    padding: 16px 18px;
+    display: flex; flex-direction: column; gap: 10px;
+}
+.about__text { font-size: 0.9rem; color: var(--text-main); }
+.about__domain { font-size: 0.85rem; color: var(--text-muted); margin-top: 6px; }
+.about__domain-label { font-weight: 500; margin-right: 4px; }
+
+/* HABILIDADES */
+.skills-block {
+    border-radius: var(--radius-card);
+    background: rgba(15,23,42,0.9);
+    border: 1px solid var(--border-soft);
+    padding: 14px 16px;
+}
+.skills-block__title { font-size: 1rem; margin-bottom: 6px; }
+.skills-list { display: flex; flex-direction: column; gap: 4px; }
+.skills-list__item { font-size: 0.85rem; color: var(--text-muted); }
+
+/* TECH STACK */
+.stack {
+    border-radius: var(--radius-card);
+    background: rgba(15,23,42,0.9);
+    border: 1px solid var(--border-soft);
+    padding: 14px 16px;
+    display: grid; gap: 12px;
+}
+.stack__group { display: flex; flex-direction: column; gap: 6px; }
+.stack__title { font-size: 0.95rem; font-weight: 600; }
+.stack__chips { display: flex; flex-wrap: wrap; gap: 6px; }
+
+/* EXPERIENCIA */
+.experience-block {
+    border-radius: var(--radius-card);
+    background: rgba(15,23,42,0.9);
+    border: 1px solid var(--border-soft);
+    padding: 14px 16px;
+}
+.experience-block__title { font-size: 1rem; margin-bottom: 6px; }
+.experience-list { display: flex; flex-direction: column; gap: 4px; }
+.experience-list__item { font-size: 0.85rem; color: var(--text-muted); }
+
+/* FORMACIÓN */
+.education__item {
+    border-radius: var(--radius-card);
+    background: rgba(15,23,42,0.9);
+    border: 1px solid var(--border-soft);
+    padding: 14px 16px;
+}
+.education__title { font-size: 1rem; margin-bottom: 4px; }
+.education__detail { font-size: 0.9rem; color: var(--text-muted); }
+
+/* BLOG */
+.blog-card {
+    border-radius: var(--radius-card);
+    background: rgba(15,23,42,0.9);
+    border: 1px solid var(--border-soft);
+    padding: 14px 16px;
+}
+.blog-card__title { font-size: 1rem; margin-bottom: 4px; }
+.blog-card__excerpt { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 6px; }
+.blog-card__link { font-size: 0.85rem; color: var(--accent-blue); }
+
+/* CONTACTO */
+.contact {
+    border-radius: var(--radius-card);
+    background: rgba(15,23,42,0.9);
+    border: 1px solid var(--border-soft);
+    padding: 16px 18px;
+    display: flex; flex-direction: column; gap: 12px;
+}
+.contact__label { font-size: 0.8rem; color: var(--text-muted); }
+.contact__email { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.contact__value {
+    font-size: 0.9rem; padding: 4px 8px;
+    border-radius: var(--radius-pill);
+    background: rgba(15,23,42,0.9);
+    border: 1px solid rgba(55,65,81,0.9);
+    cursor: pointer;
+}
+.contact__channels { display: flex; flex-direction: column; gap: 6px; }
+.contact__links { display: flex; flex-wrap: wrap; gap: 10px; }
+.contact__link { font-size: 0.85rem; color: var(--accent-purple); }
+.contact__link:hover { text-decoration: underline; }
+.contact__note { font-size: 0.8rem; color: var(--text-muted); }
