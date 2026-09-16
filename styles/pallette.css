@@ -1,21 +1,27 @@
-
+/* ==========================================
+   PALETA DE COLORES — DESIGN TOKENS
+   Único lugar donde se definen los valores
+   de color, radios y otros tokens del sitio.
+========================================== */
 :root {
-    /* Colores base */
-    --bg-main: #020617;        /* Fondo principal oscuro */
-    --bg-soft: #020617;        /* Fondo suave para secciones */
-    --card-bg: #020617;        /* Fondo de tarjetas con borde */
+    /* Fondos */
+    --bg-main: #020617;
+    --bg-soft: #020617;
+    --card-bg: #0f172a;
     --border-soft: #1f2937;
+
+    /* Texto */
     --text-main: #e5e7eb;
     --text-muted: #9ca3af;
 
-    /* Colores acento (difuminados) */
+    /* Acentos */
     --accent-blue: #38bdf8;
     --accent-purple: #a855f7;
     --accent-green: #22c55e;
 
     /* Gradientes difuminados */
-    --gradient-1: radial-gradient(circle at top left, rgba(56,189,248,0.25), transparent 60%);
-    --gradient-2: radial-gradient(circle at bottom right, rgba(168,85,247,0.25), transparent 60%);
+    --gradient-1: radial-gradient(circle at top left, rgba(56, 189, 248, 0.25), transparent 60%);
+    --gradient-2: radial-gradient(circle at bottom right, rgba(168, 85, 247, 0.25), transparent 60%);
 
     /* Botones */
     --btn-primary-bg: #22c55e;
@@ -23,7 +29,23 @@
     --btn-secondary-bg: #0f172a;
     --btn-secondary-border: #38bdf8;
 
-    /* Otros */
+    /* Forma */
     --radius-card: 14px;
     --radius-pill: 999px;
+
+    /* Movimiento */
+    --transition-fast: 0.2s ease;
+    --transition-base: 0.25s ease;
+}
+
+/* Respeta la preferencia del usuario de reducir animaciones */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }

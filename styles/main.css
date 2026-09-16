@@ -1,0 +1,20 @@
+/* ==========================================
+   MAIN.CSS
+   Punto de entrada único del sitio.
+   Enlaza SOLO este archivo desde el HTML;
+   él se encarga de importar el resto en el
+   orden correcto (tokens → base → componentes).
+========================================== */
+
+/* 1. Tokens de diseño (colores, radios, transiciones) */
+@import url("pallette.css");
+
+/* 2. Reset, tipografía base y layout general */
+@import url("components/layout.css");
+
+/* 3. Componentes de UI */
+@import url("components/buttons.css");
+@import url("components/cards.css");
+
+/* 4. Estilos de impresión / exportación a PDF */
+@import url("components/print.css");

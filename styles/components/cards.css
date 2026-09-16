@@ -115,11 +115,24 @@
 .contact__label { font-size: 0.8rem; color: var(--text-muted); }
 .contact__email { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
 .contact__value {
-    font-size: 0.9rem; padding: 4px 8px;
+    font-size: 0.9rem; padding: 5px 10px;
     border-radius: var(--radius-pill);
     background: rgba(15,23,42,0.9);
     border: 1px solid rgba(55,65,81,0.9);
-    cursor: pointer;
+    transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+.contact__value:hover {
+    border-color: var(--accent-blue);
+}
+.contact__value[data-copied="true"] {
+    border-color: var(--accent-green);
+    color: var(--accent-green);
+}
+.contact__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
 }
 .contact__channels { display: flex; flex-direction: column; gap: 6px; }
 .contact__links { display: flex; flex-wrap: wrap; gap: 10px; }
