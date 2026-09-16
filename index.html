@@ -1,171 +1,200 @@
-<!-- ===========================
-     SECCIÓN CV PROFESIONAL
-=========================== -->
-<section id="cv" class="section container">
-    <header class="section__header">
-        <meta charset="UTF-8">
-        <h2 class="section__title">Currículum Profesional</h2>
-        <meta name="description" content="Currículum de Alejandro Martínez, estudiante de Ingeniería en Desarrollo de Software con enfoque en ciberseguridad y hacking ético.">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alejandro Martínez — Currículum</title>
+    <meta name="description" content="Alejandro Martínez — Estudiante de Ingeniería en Desarrollo de Software enfocado en ciberseguridad y hacking ético. Disponible para prácticas y roles trainee.">
+    <meta name="author" content="Alejandro Martínez">
+    <meta name="robots" content="index, follow">
 
-        <link rel="stylesheet" href="styles/pallette.css">
-        <link rel="stylesheet" href="styles/styles.css">
-        <link rel="stylesheet" href="styles/components/buttons.css">
-        <link rel="stylesheet" href="styles/components/cards.css">
-        <link rel="stylesheet" href="styles/components/layout.css">
-       
+    <!-- Open Graph / redes sociales -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Alejandro Martínez — Currículum">
+    <meta property="og:description" content="Estudiante de Ingeniería en Desarrollo de Software enfocado en ciberseguridad y hacking ético.">
+    <meta property="og:image" content="https://cv.alejandromtz.dev/img/perfil.jpeg">
+    <meta property="og:url" content="https://cv.alejandromtz.dev/">
+
+    <link rel="icon" href="favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <!-- Único stylesheet a enlazar: main.css importa todo lo demás -->
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- Datos estructurados para buscadores -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Alejandro Martínez",
+        "jobTitle": "Estudiante de Ingeniería en Desarrollo de Software",
+        "email": "mailto:alejandromtz200102@gmail.com",
+        "sameAs": [
+            "https://github.com/ALX1920",
+            "https://www.linkedin.com/in/alejandro-martinez-622a52313"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <a href="#contenido" class="skip-link">Saltar al contenido</a>
+
+    <header class="topbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo__circle" aria-hidden="true">
+                    <img src="favicon/apple-touch-icon.png" alt="" width="42" height="42">
+                </span>
+                <span class="logo__text">Alejandro Martínez</span>
+            </div>
+        </div>
     </header>
 
-    <div class="cv-menu">
-         <div class="logo">
-            <span class="logo__circle">{AM}</span>
-            <span class="logo__text">Alejandro Martínez</span>
+    <main id="contenido">
+        <!-- ===========================
+             SECCIÓN CV PROFESIONAL
+        =========================== -->
+        <section id="cv" class="section container">
+            <div class="section__header">
+                <h1 class="section__title sr-only">Currículum de Alejandro Martínez</h1>
+            </div>
+
+            <div class="cv">
+                <!-- INTRODUCCIÓN -->
+                <div class="hero">
+                    <div class="hero__photo">
+                        <div class="hero__photo-frame">
+                            <img src="img/perfil.jpeg" alt="Foto de perfil de Alejandro Martínez" class="hero__img" width="200" height="200">
+                        </div>
+                    </div>
+
+                    <div class="hero__content">
+                        <span class="hero__eyebrow">Disponible para prácticas y trainee</span>
+                        <p class="hero__title">Alejandro Martínez</p>
+                        <p class="hero__role">Desarrollador junior en formación · Ciberseguridad y hacking ético</p>
+                        <p class="hero__pitch">
+                            Estudiante de Ingeniería en Desarrollo de Software con enfoque autodidacta en ciberseguridad. Formación académica, laboratorios prácticos y 8 meses de experiencia laboral real me dieron disciplina, organización y capacidad para trabajar bajo presión. Busco mi primera oportunidad como desarrollador junior o practicante en ciberseguridad — remoto o en León, Guanajuato.
+                        </p>
+                        <div class="hero__actions">
+                            <a href="mailto:alejandromtz200102@gmail.com" class="btn btn--primary">Escríbeme</a>
+                            <a href="https://github.com/ALX1920" class="btn btn--ghost" target="_blank" rel="noopener noreferrer">Ver GitHub</a>
+                            <button type="button" class="btn btn--secondary" id="downloadBtn">Descargar PDF</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cv__grid" style="margin-top: 28px;">
+
+                    <!-- EXPERIENCIA LABORAL -->
+                    <article class="education__item cv__item--full">
+                        <h2 class="education__title">Experiencia laboral</h2>
+
+                        <p class="education__detail"><strong>Promotor Electrolit — Laboratorios Pisa</strong></p>
+                        <p class="education__detail">Junio 2025 – Actualidad (8 meses) · León, Guanajuato</p>
+
+                        <ul class="experience-list" style="margin-top: 8px;">
+                            <li class="experience-list__item">Gestión de inventario, acomodo de producto y control de caducidades en punto de venta.</li>
+                            <li class="experience-list__item">Coordinación directa con encargados de tienda para cumplir rutas y metas diarias.</li>
+                            <li class="experience-list__item">Elaboración de reportes diarios de desempeño y cumplimiento de objetivos.</li>
+                            <li class="experience-list__item">Compaginación del empleo con los estudios universitarios, administrando tiempo y recursos de forma autónoma.</li>
+                        </ul>
+                    </article>
+
+                    <!-- FORMACIÓN -->
+                    <article class="education__item">
+                        <h2 class="education__title">Formación académica</h2>
+
+                        <p class="education__detail"><strong>Ingeniería en Desarrollo de Software</strong></p>
+                        <p class="education__detail">2024 – Actualidad · Universidad (en curso)</p>
+
+                        <p class="education__detail" style="margin-top: 10px;"><strong>Ciberseguridad y hacking ético (autodidacta)</strong></p>
+                        <p class="education__detail">Cursos, laboratorios y plataformas prácticas:</p>
+
+                        <ul class="skills-list" style="margin-top: 6px;">
+                            <li class="skills-list__item">Fundamentos de redes</li>
+                            <li class="skills-list__item">Linux para ciberseguridad</li>
+                            <li class="skills-list__item">Pruebas de penetración básicas</li>
+                            <li class="skills-list__item">Análisis de vulnerabilidades</li>
+                            <li class="skills-list__item">Buenas prácticas de seguridad</li>
+                        </ul>
+                    </article>
+
+                    <!-- HABILIDADES TÉCNICAS -->
+                    <article class="education__item">
+                        <h2 class="education__title">Habilidades técnicas</h2>
+                        <div class="stack__chips">
+                            <span class="chip chip--stack">Python</span>
+                            <span class="chip chip--stack">SQL</span>
+                            <span class="chip chip--stack">Linux</span>
+                            <span class="chip chip--stack">Redes</span>
+                            <span class="chip chip--stack">Git</span>
+                            <span class="chip chip--stack">GitHub</span>
+                        </div>
+
+                        <h2 class="education__title" style="margin-top: 16px;">Habilidades blandas</h2>
+                        <div class="stack__chips">
+                            <span class="chip chip--stack">Responsabilidad</span>
+                            <span class="chip chip--stack">Disciplina</span>
+                            <span class="chip chip--stack">Comunicación clara</span>
+                            <span class="chip chip--stack">Trabajo autónomo</span>
+                            <span class="chip chip--stack">Aprendizaje rápido</span>
+                            <span class="chip chip--stack">Adaptabilidad</span>
+                        </div>
+                    </article>
+
+                    <!-- CONTACTO Y REDES -->
+                    <article class="contact cv__item--full">
+                        <h2 class="education__title">Contacto</h2>
+
+                        <div class="contact__channels">
+                            <span class="contact__label">Correo</span>
+                            <div class="contact__row">
+                                <button type="button" class="contact__value" data-copy="alejandromtz200102@gmail.com">alejandromtz200102@gmail.com</button>
+                                <a class="contact__link" href="mailto:alejandromtz200102@gmail.com">Enviar correo</a>
+                            </div>
+                        </div>
+
+                        <div class="contact__channels">
+                            <span class="contact__label">Teléfono</span>
+                            <div class="contact__row">
+                                <button type="button" class="contact__value" data-copy="+52 477 640 4850">477 640 4850</button>
+                                <a class="contact__link" href="tel:+524776404850">Llamar</a>
+                            </div>
+                        </div>
+
+                        <div class="contact__channels">
+                            <span class="contact__label">Redes y perfiles</span>
+                            <div class="contact__links">
+                                <a href="https://github.com/ALX1920" class="contact__link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <a href="https://www.linkedin.com/in/alejandro-martinez-622a52313" class="contact__link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                            </div>
+                        </div>
+
+                        <p class="contact__note">
+                            Disponibilidad: medio tiempo o fines de semana, remoto preferente. Abierto a esquemas de prácticas o trainee.
+                        </p>
+
+                        <button type="button" class="contact__copy" id="shareBtn">
+                            Compartir este CV
+                        </button>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__content">
+            <span>© <span id="year">2026</span> Alejandro Martínez</span>
+            <span>León de los Aldama, Guanajuato, México</span>
         </div>
-    </div>
+    </footer>
 
-    <div class="cv">
-
-        <!-- FOTO PROFESIONAL -->
-        <article class="education__item">
-            <div class="hero__photo">
-                <div class="hero__photo-frame">
-                    <img src="img/perfil.jpeg" alt="Foto de Alejandro" class="hero__img">
-                </div>
-            </div>
-        </article>
-
-        <!-- PERFIL PROFESIONAL -->
-        <article class="education__item">
-            <h3 class="education__title">Perfil Profesional</h3>
-            <p class="education__detail">
-                Estudiante de Ingeniería en Desarrollo de Software con enfoque autodidacta en ciberseguridad, especialmente en hacking ético. Combino formación académica, aprendizaje independiente y experiencia laboral real, desarrollando disciplina, responsabilidad y capacidad para trabajar bajo presión. Actualmente trabajo desde hace 8 meses en Laboratorios Pisa como Promotor Electrolit, fortaleciendo habilidades de comunicación, organización y cumplimiento de objetivos. Mi meta profesional es incorporarme al área de ciberseguridad o desarrollo, preferentemente en modalidad remota. No busco remuneración económica por ahora; mi prioridad es aprender, aportar valor y crecer profesionalmente.
-            </p>
-        </article>
-
-        <!-- OBJETIVO PROFESIONAL -->
-        <article class="education__item">
-            <h3 class="education__title">Objetivo Profesional</h3>
-            <p class="education__detail">
-                Obtener una oportunidad como desarrollador junior, intern de ciberseguridad o trainee en hacking ético, donde pueda aplicar mis conocimientos, aprender de profesionales del área y participar en proyectos reales. Tengo especial interés en crecer dentro de Laboratorios Pisa, idealmente en un rol relacionado con seguridad informática, auditorías internas o pruebas de penetración.
-            </p>
-        </article>
-
-        <!-- EXPERIENCIA LABORAL -->
-        <article class="education__item">
-            <h3 class="education__title">Experiencia Laboral</h3>
-
-            <div class="experience-list">
-                <p class="education__detail"><strong>Promotor Electrolit – Laboratorios Pisa</strong></p>
-                <p class="education__detail">Junio 2025 – Actualidad (8 meses) · León, Guanajuato</p>
-
-                <ul class="experience-list">
-                    <li class="experience-list__item">Gestión de inventarios, acomodo de producto y control de caducidades.</li>
-                    <li class="experience-list__item">Comunicación directa con encargados de tienda y personal operativo.</li>
-                    <li class="experience-list__item">Cumplimiento de rutas, metas y reportes diarios.</li>
-                    <li class="experience-list__item">Trabajo autónomo, organizado y orientado a resultados.</li>
-                    <li class="experience-list__item">Administración responsable de ingresos para financiar mis estudios universitarios.</li>
-                </ul>
-            </div>
-        </article>
-
-        <!-- FORMACIÓN -->
-        <article class="education__item">
-            <h3 class="education__title">Formación Académica</h3>
-
-            <p class="education__detail"><strong>Ingeniería en Desarrollo de Software</strong></p>
-            <p class="education__detail">2024 – Actualidad · Universidad (en curso)</p>
-
-            <br>
-
-            <p class="education__detail"><strong>Ciberseguridad y Hacking Ético (Autodidacta)</strong></p>
-            <p class="education__detail">Estudio independiente mediante cursos, laboratorios y plataformas prácticas:</p>
-
-            <ul class="skills-list">
-                <li class="skills-list__item">Fundamentos de redes</li>
-                <li class="skills-list__item">Linux para ciberseguridad</li>
-                <li class="skills-list__item">Pruebas de penetración básicas</li>
-                <li class="skills-list__item">Análisis de vulnerabilidades</li>
-                <li class="skills-list__item">Buenas prácticas de seguridad</li>
-            </ul>
-        </article>
-
-        <!-- HABILIDADES TÉCNICAS -->
-        <article class="education__item">
-            <h3 class="education__title">Habilidades Técnicas</h3>
-
-            <div class="stack__chips">
-                <span class="chip chip--stack">Python</span>
-                <span class="chip chip--stack">SQL</span>
-                <span class="chip chip--stack">Linux</span>
-                <span class="chip chip--stack">Redes</span>
-                <span class="chip chip--stack">Git</span>
-                <span class="chip chip--stack">GitHub</span>
-            </div>
-        </article>
-
-        <!-- HABILIDADES BLANDAS -->
-        <article class="education__item">
-            <h3 class="education__title">Habilidades Blandas</h3>
-
-            <div class="stack__chips">
-                <span class="chip chip--stack">Responsabilidad</span>
-                <span class="chip chip--stack">Disciplina</span>
-                <span class="chip chip--stack">Comunicación clara</span>
-                <span class="chip chip--stack">Trabajo autónomo</span>
-                <span class="chip chip--stack">Aprendizaje rápido</span>
-                <span class="chip chip--stack">Organización</span>
-                <span class="chip chip--stack">Adaptabilidad</span>
-            </div>
-        </article>
-
-        <!-- DISPONIBILIDAD -->
-        <article class="education__item">
-            <h3 class="education__title">Disponibilidad</h3>
-
-            <ul class="skills-list">
-                <li class="skills-list__item">No puedo dejar mi empleo actual, ya que con él financio mis estudios.</li>
-                <li class="skills-list__item">No busco salario; mi prioridad es adquirir experiencia real en desarrollo y ciberseguridad.</li>
-            </ul>
-        </article>
-
-        <!-- CONTACTO Y REDES -->
-        <article class="contact">
-            <span class="contact__label">Contacto directo</span>
-
-            <div class="contact__email">
-                <span class="contact__label">cuenta primaria</span>
-                <span class="contact__value">alejandromtz200102@gmail.com</span>
-                <span class="contact__label">cuenta secundaria</span>
-                <span class="contact__value">alejandromtz200102outlook.com</span>
-                <span class="contact__label">numero</span>
-                <span class="contact__value">477 640 4850</span>
-            </div>
-
-            <div class="contact__channels">
-                <span class="contact__label">Redes y perfiles</span>
-                <div class="contact__links">
-                    <a href="https://github.com/ALX1920" class="contact__link" target="_blank">GitHub</a>
-                    <a href="https://www.linkedin.com/in/tu-usuario" class="contact__link" target="_blank">LinkedIn</a>
-                </div>
-            </div>
-
-            <button class="contact__copy" onclick="if(navigator.share){navigator.share({title:'CV Alejandro Martínez', url: window.location.href});}">
-                Compartir este CV
-            </button>
-
-            <p class="contact__note">
-                Puedes compartir este CV directamente con reclutadores o contactos de confianza.
-            </p>
-        </article>
-
-        <!-- MENSAJE PARA EL RECLUTADOR -->
-        <article class="education__item">
-            <h3 class="education__title">Mensaje para el Reclutador</h3>
-            <p class="education__detail">
-                Estoy comprometido con construir una carrera en ciberseguridad y desarrollo. Busco una oportunidad donde pueda aprender, aportar y crecer profesionalmente. Mi motivación es genuina y mi disposición para trabajar sin remuneración inicial refleja mi deseo de adquirir experiencia real y demostrar mi capacidad.
-            </p>
-            <p>
-                Este CV está diseñado para mostrar mi perfil profesional a cualquier empresa interesada en talento en formación dentro del área de tecnología.
-            </p>
-        </article>
-    </div>
-</section>
+    <script src="scripts/script.js" defer></script>
+</body>
+</html>
