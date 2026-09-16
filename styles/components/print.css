@@ -1,0 +1,60 @@
+/* ==========================================
+   IMPRESIÓN / EXPORTAR A PDF
+   Un CV casi siempre termina impreso o
+   guardado como PDF por el reclutador.
+========================================== */
+@media print {
+    body {
+        background: #ffffff !important;
+        color: #111827 !important;
+    }
+
+    .topbar,
+    .skip-link,
+    .contact__copy,
+    .hero__actions,
+    .footer {
+        display: none !important;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+
+    .cv__grid {
+        display: block !important;
+    }
+
+    .education__item,
+    .contact {
+        background: #ffffff !important;
+        border: 1px solid #d1d5db !important;
+        break-inside: avoid;
+        page-break-inside: avoid;
+        margin-bottom: 12px;
+    }
+
+    .education__detail,
+    .experience-list__item,
+    .skills-list__item,
+    .contact__label {
+        color: #374151 !important;
+    }
+
+    .chip,
+    .contact__value {
+        background: #f3f4f6 !important;
+        border-color: #d1d5db !important;
+        color: #111827 !important;
+    }
+
+    a {
+        color: #111827 !important;
+        text-decoration: underline;
+    }
+
+    .section {
+        padding: 0 !important;
+    }
+}
